@@ -1,169 +1,52 @@
-# 🚀 Epic Portfolio | Youssef Yasser
+# 🚀 My Creative Frontend Portfolio
 
 <div align="center">
+
+## 🌐 [🔥 LIVE DEMO - Visit My Portfolio](https://youssefali2002.github.io/youssef-yasser-portfolio/)
+
+<br>
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-**🌐 Live Demo:** [youssefali2002.github.io](https://youssefali2002.github.io) | **📄 Download CV:** [Youssef_Yasser_FrontEnd_CV.pdf](./Youssef_Yasser_FrontEnd_CV.pdf)
+**📄 Download CV:** [Youssef_Yasser_FrontEnd_CV.pdf](./Youssef_Yasser_FrontEnd_CV.pdf)
 
 <br>
 
-<img src="./preview.png" alt="Epic Portfolio Preview" width="800">
+<img src="./preview.png" alt="Portfolio Preview" width="800">
 
 </div>
 
 ---
 
-## 📄 Download My CV
+## �️ Tech Stack
 
-Want my professional resume? Here's how to get it instantly:
+<div align="center">
 
-### Option 1: Download from the Live Website 🚀
-1. Visit [youssefali2002.github.io](https://youssefali2002.github.io)
-2. Click the **"Download CV"** button in the top navigation bar
-3. The PDF will download automatically!
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-### Option 2: Direct Download from GitHub 📥
-Click the link below to download directly:
-
-[![Download CV](https://img.shields.io/badge/📄_Download_CV-6366f1?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](./Youssef_Yasser_FrontEnd_CV.pdf)
-
-### Option 3: Clone & Access Locally 💻
-```bash
-# Clone the repository
-git clone https://github.com/Youssefali2002/epic-portfolio.git
-
-# The CV is available at:
-# epic-portfolio/Youssef_Yasser_FrontEnd_CV.pdf
-```
-
-> 💡 **Tip:** The CV is always up-to-date with my latest experience and projects!
+</div>
 
 ---
 
-## ✨ Overview
+## � Featured Projects (9 Projects)
 
-A **cutting-edge portfolio** showcasing **9 epic Front-end projects** crafted with passion and precision. This portfolio demonstrates modern web development techniques, stunning visual effects, and exceptional performance optimization.
-
-> 🎯 **Mission:** Crafting mind-blowing interfaces that push boundaries and create unforgettable digital experiences.
-
----
-
-## 🎨 Key Features
-
-| Feature | Description |
-|---------|-------------|
-| 🎴 **Interactive Project Cards** | Vertical Auto-Scroll animation on hover to reveal full screenshot previews |
-| ⚡ **Performance Optimized** | 90+ Lighthouse score on mobile with Lazy Loading & Content Visibility |
-| 📱 **Responsive Design** | Flawless experience across all devices (mobile, tablet, desktop) |
-| 🌙 **Theme Toggle** | Switch between Dark & Neon modes |
-| 🌐 **Bilingual Support** | Full i18n implementation (English / Arabic) |
-| 🎵 **Background Music** | Ambient audio with toggle control |
-| 🎆 **Visual Effects** | Matrix rain, floating particles, custom cursor, holographic cards |
-| ♿ **Accessibility** | WCAG compliant with keyboard navigation & screen reader support |
-| 🧹 **Clean Code** | Well-organized files following industry best practices |
-
----
-
-## 🛠️ Tech Stack
-
-### Core Technologies
-- ![HTML5](https://img.shields.io/badge/-HTML5-orange?logo=html5&logoColor=white) **HTML5** - Semantic markup & accessibility
-- ![CSS3](https://img.shields.io/badge/-CSS3-blue?logo=css3&logoColor=white) **CSS3** - Modern styling with custom properties
-- ![Tailwind](https://img.shields.io/badge/-Tailwind%20CSS-cyan?logo=tailwind-css&logoColor=white) **Tailwind CSS v4** - Utility-first CSS framework
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=black) **JavaScript (ES6+)** - Interactive functionality
-
-### Tools & Platforms
-- ![Bootstrap](https://img.shields.io/badge/-Bootstrap%205-purple?logo=bootstrap&logoColor=white) **Bootstrap 5** - Component library for projects
-- ![Git](https://img.shields.io/badge/-Git-red?logo=git&logoColor=white) **Git / GitHub** - Version control & hosting
-- ![VS Code](https://img.shields.io/badge/-VS%20Code-blue?logo=visual-studio-code&logoColor=white) **VS Code / Windsurf** - Development environment
-
----
-
-## 📂 Project Showcase
-
-### 🛒 1. Vibe Store
-**Modern E-commerce Platform**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-vibe-store/screencapture-youssefali2002-github-io-vibe-store-2026-03-24-06_52_28.jpg" width="200"> | `Bootstrap5` `E-commerce` `JavaScript` | [🚀 Live](https://youssefali2002.github.io/vibe-store/) · [📁 GitHub](https://github.com/Youssefali2002/vibe-store) |
-
----
-
-### 📊 2. YoussefUI
-**Admin Dashboard with Data Visualization**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-YoussefUI/dashboard-main.jpg" width="200"> | `Dashboard` `Charts` `Data Viz` | [🚀 Live](https://youssefali2002.github.io/YoussefUI/) · [📁 GitHub](https://github.com/Youssefali2002/YoussefUI) |
-
----
-
-### 🎨 3. NovaDesigns
-**Creative Agency Portfolio**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-NovaDesigns/preview.jpg" width="200"> | `Portfolio` `Animations` `UI/UX` | [🚀 Live](https://youssefali2002.github.io/NovaDesigns/) · [📁 GitHub](https://github.com/Youssefali2002/NovaDesigns) |
-
----
-
-### 🏝️ 4. Bondi Bootstrap5
-**Modern Landing Page**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-Bondi%20Bootstrap5/bondi-preview.jpg" width="200"> | `Bootstrap5` `Landing` `Modern UI` | [🚀 Live](https://youssefali2002.github.io/Bondi-Bootstrap5/) · [📁 GitHub](https://github.com/Youssefali2002/Bondi-Bootstrap5) |
-
----
-
-### 🎭 5. Kasper Creative Design
-**Creative Agency Template**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-Kasper%20Creative%20Design/preview.jpg" width="200"> | `Pure CSS` `Template` `Creative` | [🚀 Live](https://youssefali2002.github.io/Kasper-Creative-Design/) · [📁 GitHub](https://github.com/Youssefali2002/Kasper-Creative-Design) |
-
----
-
-### 🎮 6. Vanilla Wordle Clone
-**Word Guessing Game**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/vanilla-wordle-clone/preview.jpg" width="200"> | `Game` `Vanilla JS` `Logic` | [🚀 Live](https://youssefali2002.github.io/vanilla-wordle-clone/) · [📁 GitHub](https://github.com/Youssefali2002/vanilla-wordle-clone) |
-
----
-
-### 🎯 7. Hangman Game
-**Classic Word Game**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-Hangman-Game/main-interface.jpg" width="200"> | `Game Dev` `JavaScript` `Interactive` | [🚀 Live](https://youssefali2002.github.io/Hangman-Game/) · [📁 GitHub](https://github.com/Youssefali2002/Hangman-Game) |
-
----
-
-### 🔍 8. GitHub Repo Finder
-**Repository Search Application**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-github-repo-finder/preview.jpg" width="200"> | `API` `GitHub` `Search` | [🚀 Live](https://youssefali2002.github.io/github-repo-finder/) · [📁 GitHub](https://github.com/Youssefali2002/github-repo-finder) |
-
----
-
-### 👁️ 9. VisionOne
-**Modern Landing Page**
-
-| Preview | Technologies | Links |
-|---------|-------------|-------|
-| <img src="./All-project/screenshots-VisionOne/preview.jpg" width="200"> | `Landing` `Modern UI` `Design` | [🚀 Live](https://youssefali2002.github.io/VisionOne/) · [📁 GitHub](https://github.com/Youssefali2002/VisionOne) |
+| # | Project | Description | Live Demo | Source |
+|---|---------|-------------|-----------|--------|
+| 1 | **Vibe Store** | A modern e-commerce platform with product listings and shopping cart functionality. | [🚀 Live](https://youssefali2002.github.io/vibe-store/) | [📁 GitHub](https://github.com/Youssefali2002/vibe-store) |
+| 2 | **YoussefUI** | An admin dashboard featuring data visualization with charts and analytics. | [🚀 Live](https://youssefali2002.github.io/YoussefUI/) | [📁 GitHub](https://github.com/Youssefali2002/YoussefUI) |
+| 3 | **NovaDesigns** | A creative agency portfolio with animated sections and modern design aesthetics. | [🚀 Live](https://youssefali2002.github.io/NovaDesigns/) | [📁 GitHub](https://github.com/Youssefali2002/NovaDesigns) |
+| 4 | **Bondi Bootstrap5** | A clean, modern landing page built with Bootstrap 5 components. | [🚀 Live](https://youssefali2002.github.io/Bondi-Bootstrap5/) | [📁 GitHub](https://github.com/Youssefali2002/Bondi-Bootstrap5) |
+| 5 | **Kasper Creative Design** | A creative agency template showcasing pure CSS design techniques. | [🚀 Live](https://youssefali2002.github.io/Kasper-Creative-Design/) | [📁 GitHub](https://github.com/Youssefali2002/Kasper-Creative-Design) |
+| 6 | **Vanilla Wordle Clone** | A fully functional word guessing game built with vanilla JavaScript. | [🚀 Live](https://youssefali2002.github.io/vanilla-wordle-clone/) | [📁 GitHub](https://github.com/Youssefali2002/vanilla-wordle-clone) |
+| 7 | **Hangman Game** | A classic interactive word game with engaging gameplay mechanics. | [🚀 Live](https://youssefali2002.github.io/Hangman-Game/) | [📁 GitHub](https://github.com/Youssefali2002/Hangman-Game) |
+| 8 | **GitHub Repo Finder** | A repository search application using the GitHub API. | [🚀 Live](https://youssefali2002.github.io/github-repo-finder/) | [📁 GitHub](https://github.com/Youssefali2002/github-repo-finder) |
+| 9 | **VisionOne** | A sleek, modern landing page with smooth UI/UX design. | [🚀 Live](https://youssefali2002.github.io/VisionOne/) | [📁 GitHub](https://github.com/Youssefali2002/VisionOne) |
 
 ---
 
