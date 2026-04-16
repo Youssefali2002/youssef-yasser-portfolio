@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/style.css -o ./dist/dev.css --watch",
-    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle && npx copyfiles index.html logo_youssef.jpg assets img dist",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle && npx copyfiles logo_youssef.jpg assets img All-project Youssef_Yasser_FrontEnd_CV.pdf WILDFLOWER.mp3 dist && node -e \"const fs=require('fs'); let html=fs.readFileSync('index.html','utf8'); html=html.replace(/\\.\\//g,''); html=html.replace('dist/output.css','output.css'); html=html.replace('dist/main.min.js','main.min.js'); html=html.replace('src/main.js','main.min.js'); html=html.replace('src/main.optimized.min.js defer></script>',''); fs.writeFileSync('dist/index.html',html);\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
