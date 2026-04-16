@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/style.css -o ./dist/dev.css --watch",
-    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle && npx copyfiles index.html logo_youssef.jpg assets img dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +15,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
