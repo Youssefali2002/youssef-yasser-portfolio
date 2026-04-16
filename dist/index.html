@@ -1,0 +1,1702 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    
+    <title>Youssef Yasser | Elite Front-End Developer</title>
+    <meta name="title" content="Youssef Yasser | Elite Front-End Developer" />
+    <meta name="description" content="Youssef Yasser - Junior Front-End Developer & UI/UX enthusiast based in Egypt. Specializing in high-performance web applications and interactive user experiences." />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="logo_youssef.jpg" as="image" fetchpriority="high" />
+    <link rel="preload" href="output.css" as="style" />
+
+    <!-- Non-blocking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" /></noscript>
+
+    <link rel="stylesheet" href="output.css" />
+    
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+
+  <body
+    class="bg-[var(--bg-dark)] text-white font-inter selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden loading"
+  >
+    <!-- Skip Navigation Link for Keyboard Users -->
+    <a href="#main-content" class="z-50 px-4 py-2 text-white bg-indigo-600 rounded-md sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:outline-none focus:ring-2 focus:ring-white">
+      Skip to main content
+    </a>
+    <!-- Cyberpunk Preloader -->
+    <div id="preloader">
+      <div class="preloader-content">
+        <div class="preloader-text" data-i18n="system_loading">
+          SYSTEM LOADING...
+        </div>
+        <div class="loader-bar-container">
+          <div class="loader-bar"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrixCanvas" class="fixed inset-0 pointer-events-none" aria-hidden="true"></canvas>
+
+    <!-- Epic Floating Particles Canvas -->
+    <canvas id="particlesCanvas" class="fixed inset-0 pointer-events-none" aria-hidden="true"></canvas>
+    
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop preload="none">
+        <source src="WILDFLOWER.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <header
+      class="fixed top-0 w-full z-[150] bg-[var(--card-bg)] backdrop-blur-[var(--glass-blur)] border-b border-[var(--border-effect)] transition-all duration-300"
+    >
+      <div
+        class="container flex items-center justify-between h-20 gap-4 px-6 mx-auto"
+      >
+      <!-- Music Toggle Button -->
+      <button id="musicToggle" class="flex items-center gap-2 px-4 py-2 text-white transition-all duration-300 border rounded-lg bg-black/10 backdrop-blur-md border-white/20 hover:bg-white/20">
+        <span class="music-icon">🎵</span>
+        <span class="font-bold music-text">Music OFF</span>
+      </button>
+      
+      <!-- Logo Column -->
+        <div class="flex items-center justify-start logo-column-logo">
+          
+          <a
+            href="#"
+            class="text-lg font-black tracking-tighter md:text-xl lg:text-2xl group animate-fade-up whitespace-nowrap shrink-0"
+          >
+            <span
+              class="animate-cyber-glitch quantum-text"
+              data-i18n="nav_logo_first"
+              >YOUSSEF</span
+            ><span
+              class="transition-colors gradient-text animate-quantum-pulse"
+              data-i18n="nav_logo_last"
+              >.YASSER</span
+            >
+          </a>
+          
+        </div>
+
+        <!-- Action Buttons Column -->
+
+
+        <!-- Nav Links Column -->
+        <nav
+          id="desktopNav"
+          class="items-center justify-center hidden gap-4 lg:flex xl:gap-8 shrink-0"
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          <a
+            href="#home"
+            class="nav-link flex items-center py-2 lg:py-2.5 text-sm xl:text-base font-bold transition whitespace-nowrap text-white/80 hover:text-indigo-400 inline-touch"
+            data-i18n="nav_home"
+            title="Navigate to home section"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="nav-link flex items-center py-2 lg:py-2.5 text-sm xl:text-base font-bold transition whitespace-nowrap text-white/80 hover:text-indigo-400 inline-touch"
+            data-i18n="nav_journey"
+            title="Navigate to journey section"
+            >Journey</a
+          >
+          <a
+            href="#projects"
+            class="nav-link flex items-center py-2 lg:py-2.5 text-sm xl:text-base font-bold transition whitespace-nowrap text-white/80 hover:text-indigo-400 inline-touch"
+            data-i18n="nav_projects"
+            title="Navigate to projects section"
+            >Projects</a
+          >
+          <a
+            href="#skills"
+            class="nav-link flex items-center py-2 lg:py-2.5 text-sm xl:text-base font-bold transition whitespace-nowrap text-white/80 hover:text-indigo-400 inline-touch"
+            data-i18n="nav_contact"
+            title="Navigate to skills section"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Language Switcher Column -->
+        <div class="items-center justify-end hidden gap-3 lg:flex xl:gap-5">
+          <a
+            href="Youssef_Yasser_FrontEnd_CV.pdf"
+            download="Youssef_Yasser_Frontend_Developer_CV.pdf"
+            class="px-4 py-2 lg:px-5 lg:py-2.5 text-sm xl:text-base whitespace-nowrap shrink-0 font-bold text-white transition-all duration-300 bg-gradient-to-r from-indigo-600 to-purple-600 shadow-[0_0_15px_rgba(124,58,237,0.4)] rounded-full hover:shadow-[0_0_25px_rgba(236,72,153,0.6)] hover:from-purple-600 hover:to-pink-600 hover:-translate-y-1 hover:scale-105 border border-white/10 relative overflow-hidden group touch-target-min"
+            data-i18n="nav_download_cv"
+            title="Download CV resume"
+          >
+            <span class="relative z-10">Download CV</span>
+            <div
+              class="absolute inset-0 w-full h-full transition-transform duration-700 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-full"
+            ></div>
+          </a>
+          <!-- Theme Toggle Button -->
+          <button
+            id="themeToggle"
+            class="p-2.5 font-bold text-white transition-all bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl hover:bg-white hover:text-black hover-lift touch-target-min"
+            title="Toggle color theme between dark and neon modes"
+            aria-label="Toggle theme"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-3.09a2 2 0 01-1.76-1.07L13.29 8.29a2 2 0 00-2.83 0L8.29 10.46a2 2 0 01-1.1 1.54V21z"
+              />
+            </svg>
+          </button>
+
+          <button
+            id="langSwitcher"
+            class="px-4 py-2 font-bold text-white transition-all border bg-white/10 backdrop-blur-sm border-white/20 rounded-xl hover:bg-white hover:text-black hover-lift touch-target-min"
+            aria-label="Switch language between English and Arabic"
+          >
+            <span id="langText" data-i18n="nav_lang">العربية</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 lg:hidden">
+          <!-- Mobile Theme Toggle -->
+          <button
+            id="mobileThemeToggle"
+            class="p-2 text-white focus:outline-none touch-target-min"
+            aria-label="Toggle color theme"
+            title="Toggle color theme between dark and neon modes"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-3.09a2 2 0 01-1.76-1.07L13.29 8.29a2 2 0 00-2.83 0L8.29 10.46a2 2 0 01-1.1 1.54V21z"
+              />
+            </svg>
+          </button>
+
+          <button
+            id="menuBtn"
+            class="p-3 text-white focus:outline-none z-[110] relative touch-target-min bg-gradient-to-r from-indigo-600 to-purple-600 border-2 border-white/30 rounded-2xl hover:from-purple-600 hover:to-pink-600 hover:border-white/50 transition-all shadow-lg hover:shadow-xl"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            title="Open mobile navigation menu"
+          >
+            <div class="flex flex-col items-center justify-center w-full h-full">
+              <div
+                id="icon1"
+                class="w-8 h-1 bg-white rounded-full mb-1.5 transition-all"
+              ></div>
+              <div
+                id="icon2"
+                class="w-8 h-1 bg-white rounded-full mb-1.5 transition-all"
+              ></div>
+              <div id="icon3" class="w-8 h-1 transition-all bg-white rounded-full"></div>
+            </div>
+          </button>
+          <button
+            id="mobileLangSwitcher"
+            class="p-2 text-white focus:outline-none touch-target-min"
+            aria-label="Switch language in mobile menu"
+            title="Switch language between English and Arabic"
+          >
+            <span
+              id="mobileLangText"
+              class="text-sm font-bold"
+              data-i18n="nav_lang"
+              >العربية</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside
+      id="sidebar"
+      class="fixed inset-0 z-[200] bg-[var(--bg-dark)]/90 backdrop-blur-[var(--glass-blur)] translate-x-full transition-transform duration-500 ease-in-out lg:hidden flex flex-col justify-center p-10 gap-8"
+      role="navigation"
+      aria-label="Mobile navigation menu"
+    >
+      <a
+        href="#home"
+        class="text-4xl font-black md:text-5xl mobile-link hover:text-indigo-400 mobile-nav-link touch-target-min"
+        data-i18n="nav_home"
+        title="Navigate to home section"
+        >Home</a
+      >
+      <a
+        href="#about"
+        class="text-4xl font-black md:text-5xl mobile-link hover:text-indigo-400 mobile-nav-link touch-target-min"
+        data-i18n="nav_journey"
+        title="Navigate to journey section"
+        >Journey</a
+      >
+      <a
+        href="#projects"
+        class="text-4xl font-black md:text-5xl mobile-link hover:text-indigo-400 mobile-nav-link touch-target-min"
+        data-i18n="nav_projects"
+        title="Navigate to projects section"
+        >Projects</a
+      >
+      <a
+        href="#skills"
+        class="text-4xl font-black md:text-5xl mobile-link hover:text-indigo-400 mobile-nav-link touch-target-min"
+        data-i18n="nav_contact"
+        title="Navigate to skills section"
+        >Contact</a
+      >
+      <a
+        href="Youssef_Yasser_FrontEnd_CV.pdf"
+        download="Youssef_Yasser_Frontend_Developer_CV.pdf"
+        class="text-4xl font-black md:text-5xl mobile-link hover:text-indigo-400 mobile-nav-link touch-target-min"
+        data-i18n="nav_download_cv"
+        title="Download CV resume"
+        >Download CV</a
+      >
+      <button
+        id="sidebarThemeToggle"
+        class="flex items-center gap-4 text-5xl font-black mobile-link hover:text-indigo-400 touch-target-min"
+        aria-label="Toggle theme in mobile menu"
+        title="Toggle color theme between dark and neon modes"
+      >
+        <span data-i18n="nav_theme">Theme</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-10 h-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-3.09a2 2 0 01-1.76-1.07L13.29 8.29a2 2 0 00-2.83 0L8.29 10.46a2 2 0 01-1.1 1.54V21z"
+          />
+        </svg>
+      </button>
+
+      <button
+        id="sidebarLangSwitcher"
+        class="text-5xl font-black text-left mobile-link hover:text-indigo-400 touch-target-min"
+        aria-label="Switch language in mobile menu"
+        title="Switch language between English and Arabic"
+      >
+        <span id="sidebarLangText" data-i18n="nav_lang">العربية</span>
+      </button>
+    </aside>
+
+    <main>
+  <!-- Hero Section -->
+    <section id="home" class="relative flex items-center justify-center min-h-screen overflow-hidden" role="main" id="main-content">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-purple-600/20 to-pink-600/20"
+      ></div>
+      <div
+        class="container relative z-10 grid items-center grid-cols-1 gap-16 px-6 mx-auto lg:grid-cols-2"
+      >
+        <div class="reveal-hidden reveal-left">
+          <span
+            class="inline-block px-4 py-1.5 mb-6 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-sm animate-quantum-pulse hover-lift animate-neon-flicker"
+            data-i18n="available_badge"
+          >
+            🚀 Available for new projects</span
+          >
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] mb-6 sm:mb-8 tracking-tight"
+          >
+            <span
+              class="quantum-text animate-cyber-glitch"
+              id="mainName"
+              data-i18n="hero_title"
+              style="opacity: 1; transform: translateX(0px); transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);"
+              >YOUSSEF YASSER</span
+            >
+            <br />
+            <span
+              class="gradient-text text-shadow-glow animate-epic-glow"
+              data-i18n="hero_subtitle"
+              >Elite Developer.</span
+            >
+          </h1>
+          <p
+            class="max-w-lg mb-8 text-lg leading-relaxed sm:mb-12 sm:text-xl text-white/80 animate-fade-up"
+            style="animation-delay: 0.2s"
+            data-i18n="hero_description"
+          >
+            I'm
+            <span class="font-bold gradient-text animate-cyber-glitch"
+              >Youssef Yasser</span
+            >, a
+            <span class="font-bold quantum-text">world-class developer</span>
+            crafting
+            <span class="font-bold text-indigo-400 animate-quantum-pulse"
+              >mind-blowing interfaces</span
+            >
+            that push boundaries and create unforgettable digital experiences.
+          </p>
+          <div
+            class="flex items-center gap-4 sm:gap-6 animate-fade-up"
+            style="animation-delay: 0.4s"
+          >
+            <a
+              href="#projects"
+              class="flex items-center gap-3 text-lg font-black sm:gap-4 sm:text-xl group hover-lift cyber-button"
+            >
+              <span class="text-white" data-i18n="hero_button"
+                >View My Epic Work</span
+              >
+              <span
+                class="flex items-center justify-center w-10 h-10 transition-all transform rounded-full shadow-2xl bg-gradient-to-r from-indigo-600 to-purple-600 sm:w-14 sm:h-14 group-hover:from-purple-600 group-hover:to-pink-600 group-hover:text-white group-hover:translate-x-2 animate-quantum-pulse"
+                >→</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="relative animate-slide-right">
+          <div
+            class="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] xl:w-[550px] xl:h-[550px] aspect-square mx-auto lg:ml-auto bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 rounded-[40px] sm:rounded-[80px] rotate-6 relative overflow-hidden shadow-2xl animate-float animate-epic-glow epic-border"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent"
+            ></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="logo_youssef.jpg"
+                alt="Youssef Yasser - Professional portrait photo of a web developer"
+                class="w-full h-full object-cover rounded-[80px]"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+                width="550"
+                height="550"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-500 rounded-full blur-[80px] opacity-50 animate-quantum-pulse"
+          ></div>
+          <div
+            class="absolute -bottom-10 -left-10 w-32 h-32 bg-pink-500 rounded-full blur-[60px] opacity-40 animate-quantum-pulse"
+            style="animation-delay: 1s"
+          ></div>
+          <div
+            class="absolute top-1/2 -left-20 w-24 h-24 bg-purple-500 rounded-full blur-[40px] opacity-30 animate-quantum-pulse"
+            style="animation-delay: 2s"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="relative z-10 py-32 bg-black/60"
+      style="content-visibility: auto; contain-intrinsic-size: 1500px;"
+    >
+      <div class="container px-6 mx-auto">
+        <h2
+          class="mb-16 text-3xl font-black tracking-tight text-center sm:mb-20 sm:text-4xl md:text-5xl lg:text-6xl animate-fade-up"
+          data-i18n="about_title"
+        >
+          My <span class="gradient-text">Professional Journey</span>
+        </h2>
+        <div
+          class="relative max-w-4xl mx-auto ml-4 border-l-4 border-gradient-to-b from-indigo-600 to-purple-600 md:mx-auto"
+        >
+          <div
+            class="relative p-4 mb-12 ml-6 sm:mb-16 sm:ml-10 hover-lift sm:p-6 rounded-xl sm:rounded-2xl hologram-card reveal-hidden reveal-left"
+          >
+            <div
+              class="absolute -left-[42px] sm:-left-[54px] top-0 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full border-6 sm:border-8 border-black shadow-lg animate-quantum-pulse"
+            ></div>
+            <span
+              class="text-[10px] sm:text-xs font-black tracking-widest text-indigo-400 uppercase animate-neon-flicker"
+              data-i18n="present_day"
+              >Present Day</span
+            >
+            <h3
+              class="mt-2 text-2xl font-bold text-white sm:text-3xl animate-cyber-glitch"
+              data-i18n="current_role"
+            >
+              Junior Frontend Developer
+            </h3>
+            <p
+              class="mt-3 text-base leading-relaxed sm:mt-4 sm:text-lg text-white/80"
+              data-i18n="current_description"
+            >
+              Building
+              <span class="font-bold gradient-text animate-quantum-pulse"
+                >modern responsive</span
+              >
+              web applications using HTML5, CSS3, and JavaScript. Focusing on
+              <span class="font-bold text-indigo-400 animate-hologram"
+                >clean code practices</span
+              >
+              and user-friendly interfaces.
+            </p>
+            <div class="mt-4 sm:mt-6 flex flex-wrap gap-1.5 sm:gap-2">
+              <span
+                class="px-2 py-1 bg-indigo-600/20 border border-indigo-600/50 rounded-full text-[10px] sm:text-xs font-bold text-indigo-300 animate-hologram"
+                >HTML5</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-600/20 border border-purple-600/50 rounded-full text-[10px] sm:text-xs font-bold text-purple-300 animate-hologram"
+                style="animation-delay: 0.2s"
+                >CSS3</span
+              >
+              <span
+                class="px-2 py-1 bg-pink-600/20 border border-pink-600/50 rounded-full text-[10px] sm:text-xs font-bold text-pink-300 animate-hologram"
+                style="animation-delay: 0.4s"
+                >JavaScript</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative p-4 mb-12 ml-6 sm:mb-16 sm:ml-10 hover-lift sm:p-6 rounded-xl sm:rounded-2xl hologram-card reveal-hidden reveal-right"
+          >
+            <div
+              class="absolute -left-[42px] sm:-left-[54px] top-0 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full border-6 sm:border-8 border-white shadow-lg animate-quantum-pulse"
+            ></div>
+            <span
+              class="text-[10px] sm:text-xs font-black tracking-widest text-indigo-400 uppercase animate-neon-flicker"
+              data-i18n="present_day"
+              >2025 - 2026</span
+            >
+            <h3
+              class="mt-2 text-2xl font-bold text-white sm:text-3xl animate-cyber-glitch"
+              data-i18n="learning_title"
+            >
+              Learning Advanced JavaScript
+            </h3>
+            <p
+              class="mt-3 text-base leading-relaxed sm:mt-4 sm:text-lg text-white/80"
+              data-i18n="learning_description"
+            >
+              Exploring
+              <span class="font-bold gradient-text animate-quantum-pulse"
+                >ES6+ features</span
+              >, DOM manipulation, and event handling. Creating
+              <span class="font-bold text-purple-400 animate-hologram"
+                >interactive components</span
+              >
+              and learning modern frameworks.
+            </p>
+            <div class="mt-4 sm:mt-6 flex flex-wrap gap-1.5 sm:gap-2">
+              <span
+                class="px-2 py-1 bg-purple-600/20 border border-purple-600/50 rounded-full text-[10px] sm:text-xs font-bold text-purple-300 animate-hologram"
+                >ES6+</span
+              >
+              <span
+                class="px-2 py-1 bg-pink-600/20 border border-pink-600/50 rounded-full text-[10px] sm:text-xs font-bold text-pink-300 animate-hologram"
+                style="animation-delay: 0.2s"
+                >DOM API</span
+              >
+              <span
+                class="px-2 py-1 bg-indigo-600/20 border border-indigo-600/50 rounded-full text-[10px] sm:text-xs font-bold text-indigo-300 animate-hologram"
+                style="animation-delay: 0.4s"
+                >Events</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative p-4 mb-12 ml-6 sm:mb-16 sm:ml-10 hover-lift sm:p-6 rounded-xl sm:rounded-2xl hologram-card reveal-hidden reveal-left"
+          >
+            <div
+              class="absolute -left-[42px] sm:-left-[54px] top-0 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-pink-600 to-indigo-600 rounded-full border-6 sm:border-8 border-white shadow-lg animate-quantum-pulse"
+            ></div>
+            <span
+              class="text-[10px] sm:text-xs font-black tracking-widest uppercase text-white/60 animate-neon-flicker"
+              data-i18n="present_day"
+              >2024 - 2025</span
+            >
+            <h3
+              class="mt-2 text-2xl font-bold text-white sm:text-3xl animate-cyber-glitch"
+              data-i18n="journey_title"
+            >
+              Web Development Journey
+            </h3>
+            <p
+              class="mt-3 text-base leading-relaxed sm:mt-4 sm:text-lg text-white/80"
+              data-i18n="journey_description"
+            >
+              Started learning
+              <span class="font-bold gradient-text animate-quantum-pulse"
+                >web fundamentals</span
+              >
+              from scratch. Mastered HTML5, CSS3, and basic JavaScript to build
+              <span class="font-bold text-pink-400 animate-hologram"
+                >responsive websites</span
+              >
+              and simple applications.
+            </p>
+            <div class="mt-4 sm:mt-6 flex flex-wrap gap-1.5 sm:gap-2">
+              <span
+                class="px-2 py-1 bg-pink-600/20 border border-pink-600/50 rounded-full text-[10px] sm:text-xs font-bold text-pink-300 animate-hologram"
+                >HTML5</span
+              >
+              <span
+                class="px-2 py-1 bg-indigo-600/20 border border-indigo-600/50 rounded-full text-[10px] sm:text-xs font-bold text-indigo-300 animate-hologram"
+                style="animation-delay: 0.2s"
+                >CSS3</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-600/20 border border-purple-600/50 rounded-full text-[10px] sm:text-xs font-bold text-purple-300 animate-hologram"
+                style="animation-delay: 0.4s"
+                >JavaScript Basics</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-32 bg-[var(--bg-dark)]/80 relative z-10" style="content-visibility: auto; contain-intrinsic-size: 2000px;">
+      <div class="container px-6 mx-auto">
+        <div
+          class="flex flex-col items-center justify-between gap-6 mb-16 text-center md:flex-row md:text-left"
+        >
+          <div class="animate-fade-up">
+            <h2
+              class="mb-4 text-5xl font-black text-white"
+              data-i18n="projects_title"
+            >
+              My <span class="gradient-text">Epic Projects</span>
+            </h2>
+            <p class="text-lg text-white/80" data-i18n="projects_description">
+              Mind-blowing creations that showcase my
+              <span class="font-bold text-indigo-400">elite skills</span>.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="px-8 py-4 font-black text-white transition-all border-2 border-white/20 rounded-2xl hover:bg-white hover:text-black hover-lift animate-pulse"
+            data-i18n="view_all_work"
+            >View All Work</a
+          >
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 stagger-children"
+        >
+          <!-- Vibe Store -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-indigo-600 to-purple-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-vibe-store/screencapture-youssefali2002-github-io-vibe-store-2026-03-24-06_52_28.jpg"
+                alt="Vibe Store - Modern e-commerce platform with product listings and shopping cart"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h4
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_vibe_title"
+                  >
+                    Vibe Store
+                  </h4>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_vibe_desc"
+                  >
+                    Modern E-commerce Platform
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_bootstrap"
+                      >Bootstrap5</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_ecommerce"
+                      >E-commerce</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_javascript"
+                      >JavaScript</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/vibe-store/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/vibe-store"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-pink-600 sm:rounded-xl hover:from-pink-600 hover:to-indigo-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- YoussefUI -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-purple-600 to-pink-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-YoussefUI/dashboard-main.jpg"
+                alt="YoussefUI - Admin dashboard with charts, analytics, and data visualization interface"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_youssefui_title"
+                  >
+                    YoussefUI
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_youssefui_desc"
+                  >
+                    Admin Dashboard
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_dashboard"
+                      >Dashboard</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_charts"
+                      >Charts</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_dataviz"
+                      >Data Viz</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/YoussefUI/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-pink-600 sm:rounded-xl hover:from-pink-600 hover:to-indigo-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/YoussefUI"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-pink-600 to-indigo-600 sm:rounded-xl hover:from-indigo-600 hover:to-purple-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- NovaDesigns -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-pink-600 to-indigo-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-NovaDesigns/preview.jpg"
+                alt="NovaDesigns - Creative agency portfolio with animated sections and modern design"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_nova_title"
+                  >
+                    NovaDesigns
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_nova_desc"
+                  >
+                    Creative Agency Portfolio
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_portfolio"
+                      >Portfolio</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_animations"
+                      >Animations</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_uiux"
+                      >UI/UX</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/NovaDesigns/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-pink-600 to-indigo-600 sm:rounded-xl hover:from-indigo-600 hover:to-purple-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/NovaDesigns"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Bondi Bootstrap5 -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-Bondi Bootstrap5/bondi-preview.jpg"
+                alt="Bondi Bootstrap5 - Modern landing page with responsive design and Bootstrap components"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_bondi_title"
+                  >
+                    Bondi Bootstrap5
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_bondi_desc"
+                  >
+                    Modern Landing Page
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_bootstrap5"
+                      >Bootstrap5</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_landing"
+                      >Landing</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_modern_ui"
+                      >Modern UI</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/Bondi-Bootstrap5/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/Bondi-Bootstrap5"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-pink-600 sm:rounded-xl hover:from-pink-600 hover:to-indigo-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kasper Creative Design -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-purple-600 via-pink-600 to-indigo-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-Kasper Creative Design/preview.jpg"
+                alt="Kasper Creative Design - Creative agency template with pure CSS animations and modern layout"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_kasper_title"
+                  >
+                    Kasper Creative
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_kasper_desc"
+                  >
+                    Creative Agency Template
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_pure_css"
+                      >Pure CSS</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_template"
+                      >Template</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_creative"
+                      >Creative</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/Kasper-Creative-Design/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-pink-600 sm:rounded-xl hover:from-pink-600 hover:to-indigo-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/Kasper-Creative-Design"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-pink-600 to-indigo-600 sm:rounded-xl hover:from-indigo-600 hover:to-purple-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Vanilla Wordle Clone -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-pink-600 via-indigo-600 to-purple-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/vanilla-wordle-clone/preview.jpg"
+                alt="Wordle Clone - Word guessing game with keyboard input and color-coded feedback"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_wordle_title"
+                  >
+                    Wordle Clone
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_wordle_desc"
+                  >
+                    Word Guessing Game
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_game"
+                      >Game</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_vanilla_js"
+                      >Vanilla JS</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_logic"
+                      >Logic</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/vanilla-wordle-clone/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-pink-600 to-indigo-600 sm:rounded-xl hover:from-indigo-600 hover:to-purple-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/vanilla-wordle-clone"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hangman Game -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-indigo-600 to-purple-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-Hangman-Game/main-interface.jpg"
+                alt="Hangman Game - Classic word guessing game with animated hangman drawing and keyboard"
+                loading="lazy"
+                decoding="async"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_hangman_title"
+                  >
+                    Hangman Game
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_hangman_desc"
+                  >
+                    Classic Word Game
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_gamedev"
+                      >Game Dev</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_javascript"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_interactive"
+                      >Interactive</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/Hangman-Game/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/Hangman-Game"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-pink-600 sm:rounded-xl hover:from-pink-600 hover:to-indigo-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- GitHub Repo Finder -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-purple-600 to-indigo-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-github-repo-finder/preview.jpg"
+                alt="GitHub Repo Finder - Repository search application with API integration and search results"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_github_title"
+                  >
+                    GitHub Repo Finder
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_github_desc"
+                  >
+                    Repository Search App
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_api"
+                      >API</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_github"
+                      >GitHub</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_search"
+                      >Search</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/github-repo-finder/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-purple-600 to-indigo-600 sm:rounded-xl hover:from-indigo-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/github-repo-finder"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- VisionOne -->
+          <div
+            class="cursor-pointer group hover-lift reveal-hidden reveal-up gpu-accelerated"
+          >
+            <div
+              class="relative overflow-hidden rounded-[20px] sm:rounded-[30px] bg-gradient-to-br from-pink-600 via-indigo-600 to-purple-600 aspect-[4/3] mb-4 sm:mb-6"
+            >
+              <img
+                src="All-project/screenshots-VisionOne/preview.jpg"
+                alt="VisionOne - Modern landing page with responsive design and contemporary UI elements"
+                class="object-cover w-full h-full transition-all duration-500 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              />
+              <div
+                class="absolute inset-0 transition-opacity duration-500 opacity-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100"
+              >
+                <div
+                  class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4"
+                >
+                  <h3
+                    class="mb-1 text-lg font-bold text-white sm:text-2xl sm:mb-2"
+                    data-i18n="project_vision_title"
+                  >
+                    VisionOne
+                  </h3>
+                  <p
+                    class="mb-2 text-xs text-white/80 sm:text-sm sm:mb-3"
+                    data-i18n="project_vision_desc"
+                  >
+                    Modern Landing Page
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-pink-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_landing"
+                      >Landing</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-indigo-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_modern_ui"
+                      >Modern UI</span
+                    >
+                    <span
+                      class="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600/80 rounded-full text-[10px] sm:text-xs font-bold text-white"
+                      data-i18n="tech_design"
+                      >Design</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 sm:gap-3">
+              <a
+                href="https://youssefali2002.github.io/VisionOne/"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-pink-600 to-indigo-600 sm:rounded-xl hover:from-indigo-600 hover:to-purple-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_live_demo">🚀 Live Demo</span>
+              </a>
+              <a
+                href="https://github.com/Youssefali2002/VisionOne"
+                target="_blank"
+                class="flex-1 px-2 py-2 text-xs font-bold text-center text-white transition-all rounded-lg sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-600 to-purple-600 sm:rounded-xl hover:from-purple-600 hover:to-pink-600 cyber-button sm:text-sm"
+              >
+                <span data-i18n="btn_github">📁 GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="skills"
+   
+      class="py-32 bg-[var(--bg-dark)]/50 backdrop-blur-[var(--glass-blur)] border-t  border-[var(--border-effect)]"
+      style="content-visibility: auto; contain-intrinsic-size: 1800px;"
+    >
+      <div class="container px-6 mx-auto">
+        <h2
+          class="mb-20 text-4xl font-black tracking-tight text-center md:text-6xl reveal-hidden reveal-up"
+          data-i18n="skills_title"
+        >
+          My <span class="gradient-text">Skills & Contact</span>
+        </h2>
+
+        <!-- Skills Section -->
+        <div class="mb-24 stagger-children">
+          <h3
+            class="mb-10 text-2xl font-bold text-center text-white sm:text-3xl reveal-hidden reveal-up"
+            data-i18n="my_tech_stack"
+          >
+            My <span class="text-indigo-400">Tech Stack</span>
+          </h3>
+          <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+            <!-- HTML5 -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-orange-500/20 shadow-[0_0_15px_rgba(249,115,22,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <img
+                  src="img/html-BlhLRGzY.png"
+                  class="w-6 h-6"
+                  alt="HTML5 logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-orange-400"
+                data-i18n="skill_html5"
+                >HTML5</span
+              >
+            </div>
+
+            <!-- CSS3/Tailwind v4 -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+                  class="w-6 h-6"
+                  alt="TailwindCSS logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-blue-400"
+                data-i18n="skill_css3"
+                >CSS3 / Tailwind v4</span
+              >
+            </div>
+
+            <!-- JavaScript (ES6+) -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-yellow-500/20 shadow-[0_0_15px_rgba(234,179,8,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <img
+                  src="img/js.png"
+                  class="w-6 h-6"
+                  alt="JavaScript logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-yellow-400"
+                data-i18n="skill_js"
+                >JavaScript (ES6+)</span
+              >
+            </div>
+
+            <!-- Bootstrap 5 -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <img
+                  src="img/bootstrap.svg"
+                  class="w-6 h-6"
+                  alt="Bootstrap logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-purple-400"
+                data-i18n="skill_bootstrap"
+                >Bootstrap v5.3.3</span
+              >
+            </div>
+
+            <!-- Git/GitHub -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-gray-500/20 shadow-[0_0_15px_rgba(107,114,128,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <img
+                  src="assets/icons/github.svg"
+                  class="w-6 h-6"
+                  style="filter: invert(1)"
+                  alt="GitHub logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-gray-300"
+                data-i18n="skill_git"
+                >Git / GitHub</span
+              >
+            </div>
+
+            <!-- VS Code / Windsurf -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-blue-600/20 shadow-[0_0_15px_rgba(37,99,235,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <img
+                  src="img/windsurf.svg"
+                  class="w-6 h-6" 
+                  alt="Windsurf logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-blue-500"
+                data-i18n="skill_vscode"
+                >VS Code / Windsurf</span
+              >
+            </div>
+
+            <!-- Responsive Design -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom gpu-accelerated"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-indigo-500/20 shadow-[0_0_15px_rgba(99,102,241,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <span class="text-xl">📱</span>
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-indigo-400"
+                data-i18n="skill_responsive"
+                >Responsive Design</span
+              >
+            </div>
+
+            
+            <!-- Problem Solving -->
+            <div
+              class="relative flex items-center gap-3 px-6 py-4 border cursor-pointer group bg-white/5 backdrop-blur-sm border-white/10 rounded-2xl hover-lift hologram-card reveal-hidden reveal-zoom gpu-accelerated"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.4)] flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <span class="text-xl">💡</span>
+              </div>
+              <span
+                class="font-bold tracking-wider text-white transition-colors group-hover:text-purple-400"
+                data-i18n="skill_problem"
+                >Problem Solving</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section Title -->
+        <h3
+          class="mb-10 text-2xl font-bold text-center text-white sm:text-3xl reveal-hidden reveal-up"
+          data-i18n="lets_connect"
+        >
+          Let's <span class="text-pink-400">Connect</span>
+        </h3>
+
+        <div
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8 stagger-children"
+        >
+          <a
+            href="https://github.com/Youssefali2002"
+            target="_blank"
+            class="group"
+          >
+            <div
+              class="p-4 border bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl sm:p-6 border-white/10 hover-lift reveal-hidden reveal-zoom hologram-card gpu-accelerated"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 mb-3 sm:w-16 sm:h-16 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl sm:mb-4 animate-pulse"
+              >
+                <span class="text-xl sm:text-2xl">🐙</span>
+              </div>
+              <h3
+                class="mb-1 text-xl font-bold text-white sm:text-2xl sm:mb-2"
+                data-i18n="github_title"
+              >
+                GitHub
+              </h3>
+              <p
+                class="mb-3 text-sm text-white/80 sm:mb-4"
+                data-i18n="github_desc"
+              >
+                Check out my repositories and open source contributions
+              </p>
+              <div
+                class="flex items-center text-sm font-bold text-indigo-400 transition-colors group-hover:text-indigo-300 sm:text-base"
+              >
+                <span>Youssefali2002</span>
+                <span class="ml-2">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="mailto:youseef.ali.2002@gmail.com" class="group">
+            <div
+              class="p-4 border bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl sm:p-6 border-white/10 hover-lift reveal-hidden reveal-zoom hologram-card gpu-accelerated"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 mb-3 sm:w-16 sm:h-16 bg-gradient-to-br from-red-600 to-orange-600 rounded-xl sm:mb-4 animate-pulse"
+              >
+                <span class="text-xl sm:text-2xl">📧</span>
+              </div>
+              <h3
+                class="mb-1 text-xl font-bold text-white sm:text-2xl sm:mb-2"
+                data-i18n="email_title"
+              >
+                Email
+              </h3>
+              <p
+                class="mb-3 text-sm text-white/80 sm:mb-4"
+                data-i18n="email_desc"
+              >
+                Get in touch for collaborations and opportunities
+              </p>
+              <div
+                class="flex items-center text-sm font-bold text-red-400 transition-colors group-hover:text-red-300 sm:text-base"
+              >
+                <span class="hidden sm:inline">youseef.ali.2002@gmail.com</span>
+                <span class="sm:hidden" data-i18n="email_text">Email Me</span>
+                <span class="ml-2">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/youssef-yasser-02b447343/"
+            target="_blank"
+            class="group"
+          >
+            <div
+              class="p-4 border bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl sm:p-6 border-white/10 hover-lift reveal-hidden reveal-zoom hologram-card gpu-accelerated"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 mb-3 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl sm:mb-4 animate-pulse"
+              >
+                <span class="text-xl sm:text-2xl">💼</span>
+              </div>
+              <h3
+                class="mb-1 text-xl font-bold text-white sm:text-2xl sm:mb-2"
+                data-i18n="linkedin_title"
+              >
+                LinkedIn
+              </h3>
+              <p
+                class="mb-3 text-sm text-white/80 sm:mb-4"
+                data-i18n="linkedin_desc"
+              >
+                Connect with me professionally
+              </p>
+              <div
+                class="flex items-center text-sm font-bold text-blue-400 transition-colors group-hover:text-blue-300 sm:text-base"
+              >
+                <span>Youssef Yasser</span>
+                <span class="ml-2">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.facebook.com/youssef.yasser.335424"
+            target="_blank"
+            class="group"
+          >
+            <div
+              class="p-4 border bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl sm:p-6 border-white/10 hover-lift reveal-hidden reveal-zoom hologram-card gpu-accelerated"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 mb-3 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl sm:mb-4 animate-pulse"
+              >
+                <span class="text-xl sm:text-2xl">📘</span>
+              </div>
+              <h3
+                class="mb-1 text-xl font-bold text-white sm:text-2xl sm:mb-2"
+                data-i18n="facebook_title"
+              >
+                Facebook
+              </h3>
+              <p
+                class="mb-3 text-sm text-white/80 sm:mb-4"
+                data-i18n="facebook_desc"
+              >
+                Follow me on social media
+              </p>
+              <div
+                class="flex items-center text-sm font-bold text-blue-400 transition-colors group-hover:text-blue-300 sm:text-base"
+              >
+                <span>Youssef Yasser</span>
+                <span class="ml-2">→</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=El+Obour+City+Cairo+Egypt" target="_blank" class="block group">
+  <div class="p-4 transition-all duration-300 border bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl sm:p-6 border-white/10 hover-lift reveal-hidden reveal-zoom hologram-card reveal-active group-hover:border-green-500/50" style="transition-delay: 0.1s;">
+    
+    <div class="flex items-center justify-center w-12 h-12 mb-3 sm:w-16 sm:h-16 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl sm:mb-4 animate-pulse">
+      <span class="text-xl sm:text-2xl">📍</span>
+    </div>
+
+    <h3 class="mb-1 text-xl font-bold text-white sm:text-2xl sm:mb-2" data-i18n="location_title">Location</h3>
+    
+    <p class="mb-3 text-sm text-white/80 sm:mb-4" data-i18n="location_desc">Based in El Obour City, Cairo. Available for on-site, hybrid, and remote opportunities.</p>
+    
+    <div class="flex items-center text-sm font-bold text-green-400 sm:text-base group-hover:text-green-300">
+      <span>Cairo, El Obour 🇪🇬</span>
+      <span class="ml-2 transition-transform group-hover:translate-x-1">→</span>
+    </div>
+  </div>
+</a>
+
+          <a
+            href="https://wa.me/201203785127"
+            target="_blank"
+            class="group"
+          >
+            <div
+              class="p-4 border bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl sm:p-6 border-white/10 hover-lift reveal-hidden reveal-zoom hologram-card gpu-accelerated reveal-active" style="transition-delay: 0.5s;"
+            >
+              <div
+                class="flex items-center justify-center w-12 h-12 mb-3 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl sm:mb-4 animate-pulse shadow-[0_0_15px_rgba(34,197,94,0.4)]"
+              >
+                <span class="text-xl sm:text-2xl">💬</span>
+              </div>
+              <h3
+                class="mb-1 text-xl font-bold text-white sm:text-2xl sm:mb-2"
+              >
+                WhatsApp
+              </h3>
+              <p
+                class="mb-3 text-sm text-white/80 sm:mb-4"
+              >
+                Chat with me directly on WhatsApp for quick responses
+              </p>
+              <div
+                class="flex items-center text-sm font-bold text-green-400 transition-colors group-hover:text-green-300 sm:text-base"
+              >
+                <span>01203785127</span>
+                <span class="ml-2">→</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-12 mt-20 font-bold text-center border-t border-[var(--border-effect)] text-[var(--text-dim)]"
+    >
+      <p class="animate-fade-up" data-i18n="footer_text">
+        2026
+        <span class="gradient-text animate-cyber-glitch">YOUSSEF YASSER</span> |
+        Junior Frontend Developer | Built with
+        <span class="quantum-text">Passion & Code</span>
+      </p>
+      <p
+        class="animate-fade-up"
+        style="animation-delay: 0.2s"
+        data-i18n="footer_subtext"
+      >
+        Available for freelance and collaboration opportunities
+      </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="hover-lift animate-quantum-pulse touch-target-min"
+      title="Back to top of page"
+      aria-label="Back to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
+
+  
+    <script>
+      // Mobile performance: remove heavy canvas effects early
+      (function () {
+        const reduceMotion =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const isMobile = window.matchMedia && window.matchMedia("(max-width: 767px)").matches;
+
+        if (isMobile || reduceMotion) {
+          ["matrixCanvas", "particlesCanvas", "cursorTrail", "cursorDot"].forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+          });
+
+          // Mobile performance: hide preloader immediately
+          const preloader = document.getElementById("preloader");
+          if (preloader) preloader.style.display = "none";
+          document.body.classList.remove("loading");
+          document.body.classList.add("loaded");
+        }
+      })();
+    </script>
+
+    <script src="main.min.js" defer></script>
+    <script  defer></script>
+    <!-- Audio Autoplay Script -->
+
+  </body>
+</html>

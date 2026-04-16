@@ -1,0 +1,22 @@
+{
+  "name": "lesson01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/style.css -o ./dist/dev.css --watch",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle && npx copyfiles logo_youssef.jpg assets img All-project Youssef_Yasser_FrontEnd_CV.pdf WILDFLOWER.mp3 dist && node build-fix.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
