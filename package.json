@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/style.css -o ./dist/dev.css --watch",
-    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle && npx copyfiles -u 1 logo_youssef.jpg assets img All-project Youssef_Yasser_FrontEnd_CV.pdf WILDFLOWER.mp3 dist && node build-fix.js",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --minify && npx terser ./src/main.js -o ./dist/main.min.js --compress --mangle && node build-fix.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
