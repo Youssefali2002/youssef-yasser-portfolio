@@ -27,6 +27,7 @@ copyFolderRecursiveSync('All-project', 'dist/All-project');
 fs.copyFileSync('logo_youssef.jpg', 'dist/logo_youssef.jpg');
 fs.copyFileSync('WILDFLOWER.mp3', 'dist/WILDFLOWER.mp3');
 fs.copyFileSync('Youssef_Yasser_FrontEnd_CV.pdf', 'dist/Youssef_Yasser_FrontEnd_CV.pdf');
+fs.copyFileSync('Minimal Click.wav', 'dist/Minimal Click.wav');
 
 console.log('Assets copied successfully!');
 
@@ -42,6 +43,7 @@ html = html
   .replace(/\.\/assets\//g, 'assets/')
   .replace(/\.\/img\//g, 'img/')
   .replace(/\.\/Youssef_Yasser_FrontEnd_CV\.pdf/g, 'Youssef_Yasser_FrontEnd_CV.pdf')
+  .replace(/\.\/Minimal Click\.wav/g, 'Minimal Click.wav')
   .replace(/src="\.\/src\/main\.js"/g, 'src="main.min.js"')
   .replace(/src="\.\/src\/main\.optimized\.min\.js"/g, '');
 
