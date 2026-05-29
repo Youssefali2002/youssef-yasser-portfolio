@@ -10,6 +10,9 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+
+Building modern interfaces with React, Tailwind CSS, and JavaScript.
 
 **📄 Download CV:** [Youssef_Yasser_FrontEnd_CV.pdf](./Youssef_Yasser_FrontEnd_CV.pdf)
 
@@ -21,7 +24,7 @@
 
 ---
 
-## �️ Tech Stack
+## 🧰 Tech Stack
 
 <div align="center">
 
@@ -29,30 +32,32 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 
 </div>
 
 ---
 
-## � Featured Projects (9 Projects)
+## ⭐ Featured Projects (9 Projects)
 
-| # | Project | Description | Live Demo | Source |
-|---|---------|-------------|-----------|--------|
-| 1 | **Vibe Store** | A modern e-commerce platform with product listings and shopping cart functionality. | [🚀 Live](https://youssefali2002.github.io/vibe-store/) | [📁 GitHub](https://github.com/Youssefali2002/vibe-store) |
-| 2 | **YoussefUI** | An admin dashboard featuring data visualization with charts and analytics. | [🚀 Live](https://youssefali2002.github.io/YoussefUI/) | [📁 GitHub](https://github.com/Youssefali2002/YoussefUI) |
-| 3 | **NovaDesigns** | A creative agency portfolio with animated sections and modern design aesthetics. | [🚀 Live](https://youssefali2002.github.io/NovaDesigns/) | [📁 GitHub](https://github.com/Youssefali2002/NovaDesigns) |
-| 4 | **Bondi Bootstrap5** | A clean, modern landing page built with Bootstrap 5 components. | [🚀 Live](https://youssefali2002.github.io/Bondi-Bootstrap5/) | [📁 GitHub](https://github.com/Youssefali2002/Bondi-Bootstrap5) |
-| 5 | **Kasper Creative Design** | A creative agency template showcasing pure CSS design techniques. | [🚀 Live](https://youssefali2002.github.io/Kasper-Creative-Design/) | [📁 GitHub](https://github.com/Youssefali2002/Kasper-Creative-Design) |
-| 6 | **Vanilla Wordle Clone** | A fully functional word guessing game built with vanilla JavaScript. | [🚀 Live](https://youssefali2002.github.io/vanilla-wordle-clone/) | [📁 GitHub](https://github.com/Youssefali2002/vanilla-wordle-clone) |
-| 7 | **Hangman Game** | A classic interactive word game with engaging gameplay mechanics. | [🚀 Live](https://youssefali2002.github.io/Hangman-Game/) | [📁 GitHub](https://github.com/Youssefali2002/Hangman-Game) |
-| 8 | **GitHub Repo Finder** | A repository search application using the GitHub API. | [🚀 Live](https://youssefali2002.github.io/github-repo-finder/) | [📁 GitHub](https://github.com/Youssefali2002/github-repo-finder) |
-| 9 | **VisionOne** | A sleek, modern landing page with smooth UI/UX design. | [🚀 Live](https://youssefali2002.github.io/VisionOne/) | [📁 GitHub](https://github.com/Youssefali2002/VisionOne) |
+| #   | Project                    | Description                                                                         | Live Demo                                                           | Source                                                                |
+| --- | -------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 1   | **Vibe Store**             | A modern e-commerce platform with product listings and shopping cart functionality. | [🚀 Live](https://youssefali2002.github.io/vibe-store/)             | [📁 GitHub](https://github.com/Youssefali2002/vibe-store)             |
+| 2   | **YoussefUI**              | An admin dashboard featuring data visualization with charts and analytics.          | [🚀 Live](https://youssefali2002.github.io/YoussefUI/)              | [📁 GitHub](https://github.com/Youssefali2002/YoussefUI)              |
+| 3   | **NovaDesigns**            | A creative agency portfolio with animated sections and modern design aesthetics.    | [🚀 Live](https://youssefali2002.github.io/NovaDesigns/)            | [📁 GitHub](https://github.com/Youssefali2002/NovaDesigns)            |
+| 4   | **Bondi Bootstrap5**       | A clean, modern landing page built with Bootstrap 5 components.                     | [🚀 Live](https://youssefali2002.github.io/Bondi-Bootstrap5/)       | [📁 GitHub](https://github.com/Youssefali2002/Bondi-Bootstrap5)       |
+| 5   | **Kasper Creative Design** | A creative agency template showcasing pure CSS design techniques.                   | [🚀 Live](https://youssefali2002.github.io/Kasper-Creative-Design/) | [📁 GitHub](https://github.com/Youssefali2002/Kasper-Creative-Design) |
+| 6   | **Vanilla Wordle Clone**   | A fully functional word guessing game built with vanilla JavaScript.                | [🚀 Live](https://youssefali2002.github.io/vanilla-wordle-clone/)   | [📁 GitHub](https://github.com/Youssefali2002/vanilla-wordle-clone)   |
+| 7   | **Hangman Game**           | A classic interactive word game with engaging gameplay mechanics.                   | [🚀 Live](https://youssefali2002.github.io/Hangman-Game/)           | [📁 GitHub](https://github.com/Youssefali2002/Hangman-Game)           |
+| 8   | **GitHub Repo Finder**     | A repository search application using the GitHub API.                               | [🚀 Live](https://youssefali2002.github.io/github-repo-finder/)     | [📁 GitHub](https://github.com/Youssefali2002/github-repo-finder)     |
+| 9   | **VisionOne**              | A sleek, modern landing page with smooth UI/UX design.                              | [🚀 Live](https://youssefali2002.github.io/VisionOne/)              | [📁 GitHub](https://github.com/Youssefali2002/VisionOne)              |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - Node.js (optional, for development)
 
@@ -60,10 +65,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/Youssefali2002/epic-portfolio.git
+git clone https://github.com/Youssefali2002/youssef-yasser-portfolio.git
 
 # Navigate to project directory
-cd epic-portfolio
+cd youssef-yasser-portfolio
 
 # Install dependencies (for development)
 npm install
@@ -76,6 +81,7 @@ npm run build
 ```
 
 ### File Structure
+
 ```
 epic-portfolio/
 ├── 📄 index.html              # Main HTML file
@@ -99,14 +105,15 @@ epic-portfolio/
 
 ## 📊 Performance Metrics
 
-| Metric | Score |
-|--------|-------|
-| 🚀 **Performance** | 90+ (Mobile) |
-| ♿ **Accessibility** | 95+ |
-| ✅ **Best Practices** | 100 |
-| 🔍 **SEO** | 95+ |
+| Metric                | Score        |
+| --------------------- | ------------ |
+| 🚀 **Performance**    | 90+ (Mobile) |
+| ♿ **Accessibility**  | 95+          |
+| ✅ **Best Practices** | 100          |
+| 🔍 **SEO**            | 95+          |
 
 **Optimization Techniques Used:**
+
 - ✅ Lazy Loading for images (`loading="lazy"`)
 - ✅ Content Visibility for sections (`content-visibility: auto`)
 - ✅ Preload critical assets
@@ -118,11 +125,11 @@ epic-portfolio/
 
 ## 🎓 Professional Journey
 
-| Period | Role | Focus |
-|--------|------|-------|
-| **Present** | Junior Frontend Developer | Modern responsive web applications |
-| **2025-2026** | Advanced JS Learner | ES6+, DOM manipulation, frameworks |
-| **2024-2025** | Web Dev Beginner | HTML5, CSS3, JavaScript fundamentals |
+| Period        | Role                      | Focus                                                          |
+| ------------- | ------------------------- | -------------------------------------------------------------- |
+| **Present**   | Junior Frontend Developer | Modern responsive web applications with React and Tailwind CSS |
+| **2025-2026** | Advanced JS Learner       | ES6+, DOM manipulation, React components, state and hooks      |
+| **2024-2025** | Web Dev Beginner          | HTML5, CSS3, JavaScript fundamentals                           |
 
 ---
 
@@ -139,8 +146,9 @@ epic-portfolio/
 </div>
 
 ### 📍 Location
+
 **El Obour City, Cairo, Egypt** 🇪🇬  
-*Available for on-site, hybrid, and remote opportunities*
+_Available for on-site, hybrid, and remote opportunities_
 
 ---
 
@@ -154,7 +162,7 @@ This project is available for viewing and educational purposes. All project code
 
 ### 💫 Built with Passion & Code by **Youssef Yasser**
 
-🎯 *Available for freelance and collaboration opportunities*
+🎯 _Available for freelance and collaboration opportunities_
 
 **⭐ Star this repository if you find it helpful!**
 
