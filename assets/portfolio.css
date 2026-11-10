@@ -127,3 +127,46 @@ body::after {
 @media (prefers-reduced-motion: reduce) {
  body::before, body::after { animation: none; opacity: .4; }
 }
+
+.hero { position: relative; isolation: isolate; }
+.hero-sky {
+ position: absolute;
+ z-index: -1;
+ inset: 0;
+ overflow: hidden;
+ pointer-events: none;
+ background:
+  radial-gradient(ellipse at 78% 43%, #f1c5a94d, transparent 56%),
+  radial-gradient(ellipse at 12% 15%, #f8e2bb6b, transparent 45%);
+ border-radius: 1rem;
+}
+:dir(rtl) .hero-sky {
+ background:
+  radial-gradient(ellipse at 22% 43%, #f1c5a94d, transparent 56%),
+  radial-gradient(ellipse at 88% 15%, #f8e2bb6b, transparent 45%);
+}
+.hero-sky span {
+ position: absolute;
+ inset-block-start: 0;
+ inset-inline-start: 47%;
+ width: clamp(5rem, 17vw, 14rem);
+ height: 2px;
+ border-radius: 50%;
+ background: linear-gradient(90deg, transparent, #ba6e489e 75%, #a5382c);
+ opacity: 0;
+ animation: shooting-star 8s ease-out infinite;
+}
+.hero-sky span:nth-child(2) { inset-inline-start: 10%; inset-block-start: 38%; animation-delay: 3.1s; animation-duration: 10s; }
+@keyframes shooting-star {
+ 0%, 67% { opacity: 0; transform: translate3d(-28px,-5px,0) rotate(29deg); }
+ 70% { opacity: .8; }
+ 80%, 100% { opacity: 0; transform: translate3d(170px,108px,0) rotate(29deg); }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+ .hero-project, .work-card { transition: translate 180ms ease-out, box-shadow 180ms ease-out, border-color 180ms ease-out; }
+ .hero-project:hover, .work-card:hover { translate: 0 -4px; border-color: #bd8276; box-shadow: 0 16px 36px #372a241b; }
+ .project-image { overflow: hidden; }
+ .project-image img { transition: transform 260ms ease-out; }
+ .project-image:hover img { transform: scale(1.045); }
+}
+@media (prefers-reduced-motion: reduce) { .hero-sky span { animation: none; } }
