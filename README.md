@@ -14,7 +14,7 @@
 
 Building modern interfaces with React, Tailwind CSS, and JavaScript.
 
-**📄 Download CV:** [Youssef_Yasser_FrontEnd_CV.pdf](./Youssef_Yasser_FrontEnd_CV.pdf)
+**📄 Download CV:** [Youssef_Yasser_Ismail_Software_Engineer_CV.pdf](./Youssef_Yasser_Ismail_Software_Engineer_CV.pdf)
 
 <br>
 
@@ -85,7 +85,7 @@ npm run build
 ```
 epic-portfolio/
 ├── 📄 index.html              # Main HTML file
-├── 📄 Youssef_Yasser_FrontEnd_CV.pdf
+├── 📄 Youssef_Yasser_Ismail_Software_Engineer_CV.pdf
 ├── 📁 src/
 │   ├── 📄 style.css          # Custom CSS styles
 │   ├── 📄 main.js            # Main JavaScript
@@ -127,7 +127,7 @@ epic-portfolio/
 
 | Period        | Role                      | Focus                                                          |
 | ------------- | ------------------------- | -------------------------------------------------------------- |
-| **Present**   | Junior Frontend Developer | Modern responsive web applications with React and Tailwind CSS |
+| **Present**   | Software Engineer | Modern responsive web applications with React and Tailwind CSS |
 | **2025-2026** | Advanced JS Learner       | ES6+, DOM manipulation, React components, state and hooks      |
 | **2024-2025** | Web Dev Beginner          | HTML5, CSS3, JavaScript fundamentals                           |
 
@@ -167,3 +167,7 @@ This project is available for viewing and educational purposes. All project code
 **⭐ Star this repository if you find it helpful!**
 
 </div>
+
+## Featured engineering work
+
+The [portfolio](https://youssefali2002.github.io/youssef-yasser-portfolio/) highlights Look Operations Platform, mobile applications, and a desktop order workflow with WhatsApp intake. The Look case study uses sample records.
