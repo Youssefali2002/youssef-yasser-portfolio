@@ -170,3 +170,6 @@ body::after {
  .project-image:hover img { transform: scale(1.045); }
 }
 @media (prefers-reduced-motion: reduce) { .hero-sky span { animation: none; } }
+
+.star-trail { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .star-trail { display: none; } }
