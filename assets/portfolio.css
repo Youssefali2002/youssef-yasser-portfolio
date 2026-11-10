@@ -173,3 +173,67 @@ body::after {
 
 .star-trail { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .star-trail { display: none; } }
+
+.look-gallery a { display: block; }
+.look-gallery a, .hero-project[data-look-image] { cursor: zoom-in; }
+@media (max-width: 700px) {
+ .look-gallery { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+ .look-gallery img { height: auto; max-height: 30rem; max-height: 70svh; }
+}
+html:has(.look-viewer[open]) { overflow: hidden; }
+.look-viewer {
+ width: min(96%, 80rem);
+ max-width: none;
+ max-height: min(94vh, 64rem);
+ max-height: min(94dvh, 64rem);
+ padding: 0;
+ border: 1px solid var(--line);
+ border-radius: .85rem;
+ color: var(--ink);
+ background: var(--surface);
+ box-shadow: 0 24px 72px #101a2c66;
+ overflow: auto;
+}
+.look-viewer[open] { display: flex; flex-direction: column; }
+.look-viewer::backdrop { background: #111b28d9; }
+.look-viewer-bar, .look-viewer-footer { padding: .65rem 1rem; }
+.look-viewer-bar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: .65rem;
+ border-block-end: 1px solid var(--line);
+}
+.look-viewer-bar h2 { margin: 0; font-size: clamp(.95rem, 3.5vw, 1.2rem); }
+.look-viewer-bar button {
+ padding: .5rem .75rem;
+ min-height: 44px;
+ border: 1px solid var(--line);
+ border-radius: .5rem;
+ background: var(--soft);
+ color: var(--ink);
+ font: inherit;
+ font-weight: 750;
+ white-space: nowrap;
+ cursor: pointer;
+}
+.look-viewer-bar button span { margin-inline-start: .25rem; }
+.look-viewer-media { min-height: 0; overflow: auto; background: var(--bg); }
+.look-viewer-media img {
+ display: block;
+ width: auto;
+ height: auto;
+ max-width: 100%;
+ max-height: calc(94vh - 8rem);
+ max-height: calc(94dvh - 8rem);
+ margin: auto;
+ object-fit: contain;
+}
+.look-viewer-footer { border-block-start: 1px solid var(--line); }
+.look-viewer-footer a { font-weight: 650; }
+.look-viewer-bar, .look-viewer-footer { flex-shrink: 0; }
+.look-viewer-media { overscroll-behavior: contain; }
+@media (max-width: 700px) {
+ .look-gallery img { object-fit: cover; object-position: top; }
+ .look-viewer-media img { width: 100%; max-height: none; }
+}

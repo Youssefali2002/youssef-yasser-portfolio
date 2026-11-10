@@ -13,8 +13,9 @@
   <link rel="canonical" href="https://youssefali2002.github.io/youssef-yasser-portfolio/ar/">
   <link rel="alternate" hreflang="en" href="https://youssefali2002.github.io/youssef-yasser-portfolio/">
   <link rel="alternate" hreflang="ar" href="https://youssefali2002.github.io/youssef-yasser-portfolio/ar/">
-  <link rel="stylesheet" href="../assets/portfolio.css?v=interactive-1">
+  <link rel="stylesheet" href="../assets/portfolio.css?v=look-viewer-1">
   <script src="../assets/star-trail.js?v=1" defer></script>
+  <script src="../assets/look-viewer.js?v=1" defer></script>
 </head>
 <body id="home">
 <a class="skip" href="#main-content">تخطّ إلى المحتوى</a>
@@ -39,7 +40,7 @@
       <p class="facts">٣ سنين خبرة · القاهرة، مصر</p>
       <div class="actions"><a class="button primary" href="../Youssef_Yasser_Ismail_Software_Engineer_CV.pdf" download>تنزيل السيرة الذاتية</a><a class="button secondary" href="#look-case-study">شوف مشروع Look</a></div>
     </div>
-    <a class="hero-project" href="#look-case-study">
+    <a class="hero-project" data-look-image href="../assets/look/owner.webp">
       <span class="project-label"><span class="eyebrow">المشروع الرئيسي</span><strong>Look Operations Platform</strong></span>
       <img src="../assets/look/owner.webp" alt="لوحة صاحب الشركة في Look ببيانات تجريبية" width="1350" height="844" fetchpriority="high">
       <span class="project-footer">توزيع المشاوير · السيارات · التقارير <span aria-hidden="true">↗</span></span>
@@ -60,7 +61,7 @@
       </div>
       <details class="project-details">
         <summary>شوف خمس لقطات إضافية ببيانات تجريبية</summary>
-        <div class="gallery"><figure><a href="../assets/look/dispatch.webp"><img src="../assets/look/dispatch.webp" alt="توزيع المشاوير" loading="lazy" decoding="async"></a><figcaption>توزيع المشاوير</figcaption></figure><figure><a href="../assets/look/field.webp"><img src="../assets/look/field.webp" alt="واجهة المندوب" loading="lazy" decoding="async"></a><figcaption>واجهة المندوب</figcaption></figure><figure><a href="../assets/look/driver.webp"><img src="../assets/look/driver.webp" alt="واجهة السائق" loading="lazy" decoding="async"></a><figcaption>واجهة السائق</figcaption></figure><figure><a href="../assets/look/reports.webp"><img src="../assets/look/reports.webp" alt="التقارير الشخصية" loading="lazy" decoding="async"></a><figcaption>التقارير الشخصية</figcaption></figure><figure><a href="../assets/look/schedule.webp"><img src="../assets/look/schedule.webp" alt="جدول السيارات" loading="lazy" decoding="async"></a><figcaption>جدول السيارات</figcaption></figure></div>
+        <div class="gallery look-gallery"><figure><a data-look-image href="../assets/look/dispatch.webp"><img src="../assets/look/dispatch.webp" alt="توزيع المشاوير" loading="lazy" decoding="async"></a><figcaption>توزيع المشاوير</figcaption></figure><figure><a data-look-image href="../assets/look/field.webp"><img src="../assets/look/field.webp" alt="واجهة المندوب" loading="lazy" decoding="async"></a><figcaption>واجهة المندوب</figcaption></figure><figure><a data-look-image href="../assets/look/driver.webp"><img src="../assets/look/driver.webp" alt="واجهة السائق" loading="lazy" decoding="async"></a><figcaption>واجهة السائق</figcaption></figure><figure><a data-look-image href="../assets/look/reports.webp"><img src="../assets/look/reports.webp" alt="التقارير الشخصية" loading="lazy" decoding="async"></a><figcaption>التقارير الشخصية</figcaption></figure><figure><a data-look-image href="../assets/look/schedule.webp"><img src="../assets/look/schedule.webp" alt="جدول السيارات" loading="lazy" decoding="async"></a><figcaption>جدول السيارات</figcaption></figure></div>
       </details>
     </article>
     <div class="grid" id="application-projects">
@@ -191,5 +192,17 @@
   </section>
 </main>
 <footer class="wrap footer">يوسف ياسر إسماعيل · القاهرة، مصر</footer>
+<dialog class="look-viewer" aria-labelledby="look-viewer-title">
+  <header class="look-viewer-bar">
+    <h2 id="look-viewer-title">صورة من مشروع Look</h2>
+    <form method="dialog">
+      <button type="submit" autofocus>إغلاق <span aria-hidden="true">×</span></button>
+    </form>
+  </header>
+  <div class="look-viewer-media"><img alt=""></div>
+  <footer class="look-viewer-footer">
+    <a target="_blank" rel="noopener">افتح الصورة الأصلية</a>
+  </footer>
+</dialog>
 </body>
 </html>

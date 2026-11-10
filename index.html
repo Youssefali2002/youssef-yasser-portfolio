@@ -13,8 +13,9 @@
   <link rel="canonical" href="https://youssefali2002.github.io/youssef-yasser-portfolio/">
   <link rel="alternate" hreflang="en" href="https://youssefali2002.github.io/youssef-yasser-portfolio/">
   <link rel="alternate" hreflang="ar" href="https://youssefali2002.github.io/youssef-yasser-portfolio/ar/">
-  <link rel="stylesheet" href="./assets/portfolio.css?v=interactive-1">
+  <link rel="stylesheet" href="./assets/portfolio.css?v=look-viewer-1">
   <script src="./assets/star-trail.js?v=1" defer></script>
+  <script src="./assets/look-viewer.js?v=1" defer></script>
 </head>
 <body id="home">
 <a class="skip" href="#main-content">Skip to content</a>
@@ -39,7 +40,7 @@
       <p class="facts">3 years of experience · Cairo, Egypt</p>
       <div class="actions"><a class="button primary" href="./Youssef_Yasser_Ismail_Software_Engineer_CV.pdf" download>Download CV</a><a class="button secondary" href="#look-case-study">Explore Look</a></div>
     </div>
-    <a class="hero-project" href="#look-case-study">
+    <a class="hero-project" data-look-image href="./assets/look/owner.webp">
       <span class="project-label"><span class="eyebrow">Featured project</span><strong>Look Operations Platform</strong></span>
       <img src="./assets/look/owner.webp" alt="Look owner dashboard with sample data" width="1350" height="844" fetchpriority="high">
       <span class="project-footer">Live dispatch · Fleet · Reporting <span aria-hidden="true">↗</span></span>
@@ -60,7 +61,7 @@
       </div>
       <details class="project-details">
         <summary>See five more screenshots with sample data</summary>
-        <div class="gallery"><figure><a href="./assets/look/dispatch.webp"><img src="./assets/look/dispatch.webp" alt="Operations dispatch" loading="lazy" decoding="async"></a><figcaption>Operations dispatch</figcaption></figure><figure><a href="./assets/look/field.webp"><img src="./assets/look/field.webp" alt="Field representative" loading="lazy" decoding="async"></a><figcaption>Field representative</figcaption></figure><figure><a href="./assets/look/driver.webp"><img src="./assets/look/driver.webp" alt="Driver workspace" loading="lazy" decoding="async"></a><figcaption>Driver workspace</figcaption></figure><figure><a href="./assets/look/reports.webp"><img src="./assets/look/reports.webp" alt="Personal reports" loading="lazy" decoding="async"></a><figcaption>Personal reports</figcaption></figure><figure><a href="./assets/look/schedule.webp"><img src="./assets/look/schedule.webp" alt="Fleet schedule" loading="lazy" decoding="async"></a><figcaption>Fleet schedule</figcaption></figure></div>
+        <div class="gallery look-gallery"><figure><a data-look-image href="./assets/look/dispatch.webp"><img src="./assets/look/dispatch.webp" alt="Operations dispatch" loading="lazy" decoding="async"></a><figcaption>Operations dispatch</figcaption></figure><figure><a data-look-image href="./assets/look/field.webp"><img src="./assets/look/field.webp" alt="Field representative" loading="lazy" decoding="async"></a><figcaption>Field representative</figcaption></figure><figure><a data-look-image href="./assets/look/driver.webp"><img src="./assets/look/driver.webp" alt="Driver workspace" loading="lazy" decoding="async"></a><figcaption>Driver workspace</figcaption></figure><figure><a data-look-image href="./assets/look/reports.webp"><img src="./assets/look/reports.webp" alt="Personal reports" loading="lazy" decoding="async"></a><figcaption>Personal reports</figcaption></figure><figure><a data-look-image href="./assets/look/schedule.webp"><img src="./assets/look/schedule.webp" alt="Fleet schedule" loading="lazy" decoding="async"></a><figcaption>Fleet schedule</figcaption></figure></div>
       </details>
     </article>
     <div class="grid" id="application-projects">
@@ -191,5 +192,17 @@
   </section>
 </main>
 <footer class="wrap footer">Youssef Yasser Ismail · Cairo, Egypt</footer>
+<dialog class="look-viewer" aria-labelledby="look-viewer-title">
+  <header class="look-viewer-bar">
+    <h2 id="look-viewer-title">Look screenshot</h2>
+    <form method="dialog">
+      <button type="submit" autofocus>Close <span aria-hidden="true">×</span></button>
+    </form>
+  </header>
+  <div class="look-viewer-media"><img alt=""></div>
+  <footer class="look-viewer-footer">
+    <a target="_blank" rel="noopener">Open original image</a>
+  </footer>
+</dialog>
 </body>
 </html>
