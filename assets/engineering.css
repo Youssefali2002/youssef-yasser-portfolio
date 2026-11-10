@@ -25,3 +25,7 @@
 .eng-stills figcaption { padding: .35rem 0 0; font-size: .8rem; }
 .eng-card a:focus-visible { outline: 3px solid #a5b4fc; outline-offset: -3px; }
 @media (max-width: 680px) { .eng-grid { grid-template-columns: minmax(0, 1fr); } }
+
+.eng-card .eng-link { display: inline-block; color: #c7d2fe; text-decoration: underline; text-underline-offset: .22em; margin-block-start: .4rem; }
+.eng-actions { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin-block-start: .5rem; }
+.eng-card .eng-preview { height: auto; aspect-ratio: 16 / 9; border-radius: .55rem; margin-block: .7rem; }
