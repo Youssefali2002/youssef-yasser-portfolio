@@ -75,3 +75,55 @@ summary { cursor: pointer; color: var(--accent); font-weight: 700; padding-block
  .nav { align-items: flex-start; flex-direction: column; gap: .05rem; }
  .nav nav { justify-content: space-between; width: 100%; }
 }
+
+.project-collection { margin-block-start: clamp(2rem, 5vw, 3.5rem); }
+.project-collection > h3 { font-size: clamp(1.65rem, 3.5vw, 2.25rem); }
+.work-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin-block-start: 1rem; }
+.work-card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.work-copy { padding: 1rem; flex: 1; display: flex; flex-direction: column; }
+.work-copy h3 { font-size: 1.24rem; }
+.work-copy p { margin-block-end: .9rem; }
+.work-copy .links { margin-block-start: auto; }
+.project-image { display: block; background: var(--bg); }
+.project-image:focus-visible { outline-offset: -4px; }
+.project-image img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.card:not(.work-card) .project-image { margin-block-start: .9rem; border-radius: .55rem; overflow: hidden; }
+@media (max-width: 920px) { .work-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 560px) { .work-grid { grid-template-columns: minmax(0,1fr); } }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .2rem 1rem; margin-block-end: 1.2rem; }
+.section-heading h2 { margin: 0; }
+.section-heading a { font-weight: 650; }
+
+body { isolation: isolate; }
+body::before, body::after {
+ content: "";
+ position: fixed;
+ z-index: -1;
+ inset: -16rem;
+ pointer-events: none;
+ background-repeat: repeat;
+}
+body::before {
+ background-size: 220px 186px;
+ background-image:
+  radial-gradient(circle at 24px 32px, #a5382c80 0 1px, transparent 2px),
+  radial-gradient(circle at 174px 84px, #a5382c70 0 1px, transparent 2px),
+  radial-gradient(circle at 99px 147px, #a5382c60 0 1px, transparent 2px),
+  radial-gradient(circle at 204px 158px, #be7f507a 0 .8px, transparent 1.6px),
+  radial-gradient(circle at 49px 104px, #17273542 0 1px, transparent 2px);
+ animation: star-drift 30s linear infinite;
+}
+body::after {
+ background-size: 240px 210px;
+ background-image:
+  radial-gradient(ellipse 4px 1px at 65px 58px, #a5382c7a 0 42%, transparent 100%),
+  radial-gradient(ellipse 1px 4px at 65px 58px, #a5382c7a 0 42%, transparent 100%),
+  radial-gradient(ellipse 4px 1px at 183px 161px, #bb714b73 0 42%, transparent 100%),
+  radial-gradient(ellipse 1px 4px at 183px 161px, #bb714b73 0 42%, transparent 100%);
+ animation: star-glints 42s linear infinite;
+}
+@keyframes star-drift { to { transform: translate3d(220px,-186px,0); } }
+@keyframes star-glints { to { transform: translate3d(-240px,-210px,0); } }
+@media (prefers-reduced-motion: reduce) {
+ body::before, body::after { animation: none; opacity: .4; }
+}
