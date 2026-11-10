@@ -23,8 +23,7 @@ p, li { overflow-wrap: break-word; }
 .nav nav a { padding-inline: .28rem; }
 .nav a:hover { color: var(--accent); }
 .nav .language { color: var(--accent); }
-.brand { gap: .65rem; }
-.brand span { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: .55rem; background: var(--ink); color: white; font-size: .8rem; }
+.brand { min-height: 2.2rem; }
 .skip { position: fixed; inset-block-start: .65rem; inset-inline-start: .65rem; z-index: 10; padding: .5rem 1rem; background: white; border-radius: .3rem; transform: translateY(-160%); }
 .skip:focus { transform: none; }
 .hero { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr); align-items: center; gap: clamp(1.7rem, 5vw, 4rem); padding-block: clamp(2.1rem, 7vw, 6.25rem); }
@@ -236,4 +235,31 @@ html:has(.look-viewer[open]) { overflow: hidden; }
 @media (max-width: 700px) {
  .look-gallery img { object-fit: cover; object-position: top; }
  .look-viewer-media img { width: 100%; max-height: none; }
+}
+
+#hero-title { position: relative; }
+.name-typing { position: absolute; inset: 0; }
+.name-animating .name-static { opacity: 0; }
+.name-typing-text { color: var(--ink); }
+@supports (background-clip: text) {
+ .name-static, .name-typing-text {
+  background: linear-gradient(105deg, #172735 10%, #633c38 52%, #a5382c 78%, #9c432e 100%);
+  background-clip: text;
+  color: transparent;
+ }
+ :dir(rtl) :is(.name-static, .name-typing-text) { background-image: linear-gradient(255deg, #172735 10%, #633c38 52%, #a5382c 78%, #9c432e 100%); }
+}
+.name-typing.is-typing::after {
+ content: "";
+ display: inline-block;
+ width: .055em;
+ height: .76em;
+ margin-inline-start: .06em;
+ border-radius: .03em;
+ background: var(--accent);
+ vertical-align: -.015em;
+}
+@media (prefers-reduced-motion: reduce) {
+ .name-animating .name-static { opacity: 1; }
+ .name-typing { display: none; }
 }
