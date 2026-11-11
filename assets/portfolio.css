@@ -263,3 +263,12 @@ html:has(.look-viewer[open]) { overflow: hidden; }
  .name-animating .name-static { opacity: 1; }
  .name-typing { display: none; }
 }
+
+.zad-project { margin-block-start: 1rem; }
+.zad-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.zad-gallery a { display: block; cursor: zoom-in; }
+.zad-gallery img { display: block; height: auto; max-height: 29rem; background: #0b1e19; }
+@media (max-width: 560px) {
+  .zad-gallery { grid-template-columns: minmax(0, 1fr); }
+  .zad-gallery figure { width: min(100%, 17rem); margin-inline: auto; }
+}
